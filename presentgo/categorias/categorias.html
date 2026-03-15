@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías - PRESENT&GO</title>
+    <link rel="stylesheet" href="categorias.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- FLECHA DENTRO DEL RECUADRO -->
+        <div class="top-icons">
+            <span class="icon-btn" id="btnBack">←</span>
+        </div>
+
+        <!-- TÍTULO Y SUBTÍTULO IGUAL QUE HOME -->
+        <h1>PRESENT&GO</h1>
+        <h2>Explorar por categorías</h2>
+
+        <!-- OPCIONES -->
+        <div class="opciones">
+
+            <label class="opcion">
+                <input type="radio" name="categoria" value="tecnologia">
+                Tecnología
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="categoria" value="moda">
+                Moda
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="categoria" value="viajes">
+                Viajes
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="categoria" value="hogar">
+                Hogar
+            </label>
+
+        </div>
+
+        <!-- BOTÓN APLICAR -->
+        <button id="btnAplicar" class="btn">Aplicar</button>
+
+    </div>
+
+    <script src="../api.js"></script>
+    <script src="categorias.js"></script>
+</body>
+</html>

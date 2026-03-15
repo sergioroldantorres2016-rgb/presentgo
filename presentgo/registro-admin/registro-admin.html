@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta de administrador - PRESENT&GO</title>
+    <link rel="stylesheet" href="registro-admin.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <h1 class="logo-title">PRESENT&GO</h1>
+
+        <!-- SUBTÍTULO -->
+        <h2 class="subtitulo">Crear cuenta de administrador</h2>
+
+        <!-- CAMPOS -->
+        <div class="input-group">
+            <input id="nombreAdmin" type="text" placeholder="Introduzca nombre">
+        </div>
+
+        <div class="input-group">
+            <input id="apellidoAdmin" type="text" placeholder="Introduzca apellidos">
+            <div class="input-group">
+            <input id="usernameAdmin" type="text" placeholder="Nombre de usuario (para login)">
+        </div>
+
+        <div class="input-group">
+            <input id="claveAdmin" type="password" placeholder="Introduzca tu clave. Ej: 3460">
+        </div>
+
+        <div class="input-group">
+            <input id="claveAdmin2" type="password" placeholder="Repita la clave">
+        </div>
+
+        <!-- BOTÓN (REDUCIDO Y RENOMBRADO) -->
+        <button id="btnCrearAdmin" class="btn">Crear cuenta</button>
+
+    </div>
+
+    <script src="../api.js"></script>
+    <script src="registro-admin.js"></script>
+</body>
+</html>

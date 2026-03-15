@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RECUADRO GRIS */
+.container{
+    max-width: 320px;
+    width: 100%;
+    padding: 45px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px #0000001a;
+    animation: fadeIn 1.5s ease-in-out;
+    text-align: center;
+}
+
+/* LOGO */
+.logo-title{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* SUBTÍTULO */
+.subtitulo{
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* BOTONES */
+.btn{
+    width: 85%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: #e6e6e6;
+}
+
+.btn:hover{
+    background: #d2d2d2;
+    transform: translateY(-2px);
+}
+
+/* BOTÓN NEGRO */
+.btn-negro{
+    background: black;
+    color: white;
+}
+
+.btn-negro:hover{
+    background: #333;
+    transform: translateY(-2px);
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn{
+    0%{ opacity: 0; transform: scale(0.9); }
+    100%{ opacity: 1; transform: scale(1); }
+}

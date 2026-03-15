@@ -1,0 +1,156 @@
+/* PANTALLA COMPLETA CENTRADA */
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RECUADRO GRIS IGUAL QUE TODAS LAS PANTALLAS */
+.container{
+    max-width: 320px;
+    width: 100%;
+    padding: 45px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px #0000001a;
+    animation: fadeIn 1.5s ease-in-out;
+    text-align: center;
+}
+
+/* LOGO */
+.logo-title{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* SUBTÍTULO */
+.subtitulo{
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* FORMULARIO */
+.login-form{
+    width: 100%;
+}
+
+/* GRUPO DE INPUT */
+.input-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* LABEL */
+.input-group .label{
+    position: absolute;
+    top: -16px;
+    left: 12px;
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+/* INPUTS */
+.input-group input{
+    width: 85%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group input:focus{
+    border-color: black;
+    box-shadow: 0 0 10px #00000033;
+}
+
+/* OLVIDASTE CONTRASEÑA */
+.forgot-password{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* BOTÓN ENTRAR */
+.submit{
+    display: block;
+    width: 85%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit:hover{
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+/* REGISTRO */
+.signup-link{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-link a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ADMIN */
+.admin-link{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.admin-link a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.admin-link a:hover{
+    color: #555;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn{
+    0%{ opacity: 0; transform: scale(0.9); }
+    100%{ opacity: 1; transform: scale(1); }
+}

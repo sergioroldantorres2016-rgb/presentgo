@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros - PRESENT&GO</title>
+    <link rel="stylesheet" href="filtros.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- FLECHA DENTRO DEL RECUADRO -->
+        <div class="top-icons">
+            <span class="icon-btn" id="btnBack">←</span>
+        </div>
+
+        <h1>PRESENT&GO</h1>
+        <h2>Buscar por filtros</h2>
+
+        <div class="opciones">
+
+            <label class="opcion">
+                <input type="radio" name="precio" value="0-20">
+                0 - 20€
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="precio" value="20-50">
+                20 - 50€
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="precio" value="+50">
+                +50€
+            </label>
+
+        </div>
+
+        <button id="btnAplicar" class="btn">Aplicar</button>
+
+    </div>
+
+    <script src="../api.js"></script>
+    <script src="filtros.js"></script>
+</body>
+</html>

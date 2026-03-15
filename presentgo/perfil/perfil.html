@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - PRESENT&GO</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Icono administrador (solo visible si rol = admin) -->
+        <div id="adminIcon" class="admin-icon" style="display:none; cursor:pointer;">
+            ADMIN
+        </div>
+
+        <!-- Nombre del usuario -->
+        <h2 id="nombreUsuario">Usuario</h2>
+
+        <!-- Ubicación fija o editable -->
+        <p id="ubicacionUsuario">Madrid, España</p>
+
+        <button class="btn">Editar Perfil</button>
+
+        <div class="opciones">
+            <div class="opcion">Notificaciones</div>
+            <div class="opcion">Regalos</div>
+            <div class="opcion">Configuración</div>
+
+            <!-- SOLO PARA ADMIN -->
+            <div id="adminOption" class="opcion" style="display:none;">Administrar</div>
+        </div>
+
+        <button id="btnCerrar" class="btn btn-negro">Cerrar Sesión</button>
+        <button id="btnInicio" class="btn btn-negro">Inicio</button>
+
+    </div>
+
+    <script src="../api.js"></script>
+    <script src="perfil.js"></script>
+</body>
+</html>

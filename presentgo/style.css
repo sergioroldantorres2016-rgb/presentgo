@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+/* BLOQUE HORIZONTAL */
+.logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* separación entre logo y texto */
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 500px; /* tamaño del icono */
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.creadores {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.btn {
+    margin-top: 40px;
+    width: 200px;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+

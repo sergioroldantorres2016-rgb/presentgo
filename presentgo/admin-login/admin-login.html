@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Iniciar sesión</title>
+    <link rel="stylesheet" href="admin-login.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <h1 class="logo-title">PRESENT&GO</h1>
+
+        <!-- SUBTÍTULO -->
+        <h2 class="subtitulo">Iniciar sesión</h2>
+
+        <form>
+
+            <label>Usuario</label>
+            <div class="input-group">
+                <input type="text" id="adminUser" placeholder="Introduzca usuario">
+            </div>
+
+            <label>Clave de acceso</label>
+            <div class="input-group">
+                <input type="password" id="adminPass" placeholder="Introduzca tu clave de acceso">
+            </div>
+
+            <!-- AHORA EL CHECKBOX VA AQUÍ -->
+            <label class="checkbox">
+                <input type="checkbox" id="recordarAdmin"> Recordar mi clave
+            </label>
+
+            <button type="button" id="btnAdminLogin" class="btn">Iniciar sesión</button>
+        </form>
+
+        <p class="register">
+            <a href="../registro-admin/registro-admin.html">Registrarse como administrador</a>
+        </p>
+
+    </div>
+
+    <script src="../api.js"></script>
+    <script src="admin-login.js"></script>
+</body>
+</html>
